@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="apMainMenu" fx:id="apMainMenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trainticketapp.MainMenuController">
+   <children>
+      <VBox layoutX="400.0" layoutY="50.0" prefHeight="293.0" prefWidth="359.0" style="-fx-background-color: #F2F6FF; -fx-background-radius: 30;">
+         <children>
+            <Label alignment="CENTER" text="Pilih Stasiun" textFill="#aa413e">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="30.0" top="45.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Tentukan stasiun keberangkatan dan stasiun tujuan anda">
+               <font>
+                  <Font name="Arial" size="9.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="30.0" top="6.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Dari" textFill="#aa413e">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="30.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+            <ComboBox fx:id="cbFrom" prefHeight="26.0" prefWidth="292.0" style="-fx-background-color: #F2F6FF; -fx-border-color: #d7dbe3; -fx-border-radius: 10; -fx-border-width: 1; -fx-background-radius: 10;">
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" top="10.0" />
+               </VBox.margin>
+               <effect>
+                  <DropShadow height="4.0" offsetX="0.5" offsetY="0.5" radius="1.5" width="4.0" />
+               </effect>
+            </ComboBox>
+            <Label text="Tujuan" textFill="#aa413e">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="30.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+            <ComboBox fx:id="cbTo" prefHeight="26.0" prefWidth="292.0" style="-fx-background-color: #F2F6FF; -fx-border-color: #d7dbe3; -fx-border-radius: 10; -fx-border-width: 1; -fx-background-radius: 10;">
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" top="10.0" />
+               </VBox.margin>
+               <effect>
+                  <DropShadow height="4.0" offsetX="0.5" offsetY="0.5" radius="1.5" width="4.0" />
+               </effect>
+            </ComboBox>
+         </children>
+      </VBox>
+      <VBox layoutX="41.0" layoutY="50.0" prefHeight="506.0" prefWidth="316.0" style="-fx-background-color: #F2F6FF; -fx-background-radius: 30;">
+         <children>
+            <Label alignment="CENTER" text="Isi Data Diri" textFill="#aa413e">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="30.0" top="45.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Tuliskan data diri anda agar terdaftar dalam pemesanan tiket">
+               <font>
+                  <Font name="Arial" size="9.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="30.0" top="6.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Nama" textFill="#aa413e">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="30.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="tfName" prefHeight="26.0" prefWidth="285.0" style="-fx-border-radius: 10; -fx-background-color: #F2F6FF; -fx-border-width: 3; -fx-border-color: #d7dbe3; -fx-border-radius: 10; -fx-pref-column-count: 30;">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="4.0" offsetX="0.5" offsetY="0.5" radius="1.5" width="4.0">
+                     <color>
+                        <Color red="0.9176470637321472" green="0.9333333373069763" blue="0.9686274528503418" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="Kelas" textFill="#aa413e">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="30.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+            <ComboBox fx:id="cbClass" prefHeight="26.0" prefWidth="285.0" style="-fx-background-color: #F2F6FF; -fx-border-width: 1; -fx-border-color: #d7dbe3; -fx-border-radius: 10; -fx-background-radius: 10;">
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" top="10.0" />
+               </VBox.margin>
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="4.0" offsetX="0.5" offsetY="0.5" radius="1.5" width="4.0" />
+               </effect>
+            </ComboBox>
+            <Label text="No. Kursi" textFill="#aa413e">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="30.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+            <ComboBox fx:id="cbSeatNum" prefHeight="26.0" prefWidth="285.0" style="-fx-background-color: #F2F6FF; -fx-border-width: 1; -fx-border-color: #d7dbe3; -fx-border-radius: 10; -fx-background-radius: 10;">
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" top="10.0" />
+               </VBox.margin>
+               <effect>
+                  <DropShadow height="4.0" offsetX="0.5" offsetY="0.5" radius="1.5" width="4.0" />
+               </effect>
+            </ComboBox>
+            <Label text="Tanggal Pemesanan" textFill="#aa413e">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="30.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+            <DatePicker fx:id="dpBookingDate" prefHeight="26.0" prefWidth="285.0" style="-fx-background-color: #F2F6FF; -fx-border-color: #d7dbe3; -fx-border-radius: 10; -fx-border-width: 1; -fx-background-radius: 10;">
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" top="10.0" />
+               </VBox.margin>
+               <effect>
+                  <DropShadow height="4.0" offsetX="0.5" offsetY="0.5" radius="1.5" width="4.0" />
+               </effect>
+            </DatePicker>
+         </children>
+         <effect>
+            <BoxBlur height="1.0" width="1.0" />
+         </effect>
+      </VBox>
+      <Button fx:id="btnPreviousPage" alignment="CENTER" contentDisplay="CENTER" layoutX="450.0" layoutY="475.0" mnemonicParsing="false" onAction="#backToLoginPage" prefHeight="35.0" prefWidth="258.0" style="-fx-background-radius: 14; -fx-background-color: #F2F6FF; -fx-border-color: #233863; -fx-border-radius: 14; -fx-border-width: 1;" text="Kembali" textFill="#233863">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+         <effect>
+            <DropShadow height="10.0" offsetY="1.0" radius="2.0" width="0.0" />
+         </effect>
+      </Button>
+      <Button fx:id="btnBookTicket" alignment="CENTER" contentDisplay="CENTER" layoutX="450.0" layoutY="429.0" mnemonicParsing="false" onAction="#bookTicket" prefHeight="35.0" prefWidth="258.0" style="-fx-background-radius: 14; -fx-background-color: #233863;" text="Pesan Tiket" textFill="#f2f6ff">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="10.0" offsetY="1.0" radius="2.0" width="0.0" />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

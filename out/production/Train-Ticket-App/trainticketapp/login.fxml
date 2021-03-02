@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="bpLogin" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trainticketapp.LoginController">
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="266.0" fitWidth="468.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/passenger.png" />
+               </image>
+               <VBox.margin>
+                  <Insets top="70.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label prefHeight="88.0" prefWidth="447.0" text="BEPERGIAN AMAN DAN NYAMAN BERSAMA KAMI" textAlignment="CENTER" textFill="#233863" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="26.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="-6.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefHeight="42.0" prefWidth="423.0" text="Memberikan efesiensi kepada para penumpang  dengan memesan tiket  lewat aplikasi" textAlignment="CENTER" textFill="#4b75cb" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <VBox alignment="TOP_CENTER" prefHeight="150.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnLogin" alignment="CENTER" contentDisplay="RIGHT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#goToMainMenu" prefHeight="35.0" prefWidth="258.0" style="-fx-background-radius: 10; -fx-background-color: #F0A351;" text="Mulai Sekarang" textFill="#f2f6ff">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+               <effect>
+                  <DropShadow blurType="ONE_PASS_BOX" height="5.0" offsetY="1.0" radius="0.75" width="0.0">
+                     <color>
+                        <Color red="0.43421053886413574" green="0.3915935754776001" blue="0.3915935754776001" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </bottom>
+</BorderPane>

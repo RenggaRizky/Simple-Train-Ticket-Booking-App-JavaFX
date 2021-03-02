@@ -1,0 +1,21 @@
+
+/** LOGIN PAGE **/
+
+#bpLogin{
+    -fx-background-image : url("../img/bg.png");
+    -fx-background-size : 800 600;
+}
+
+/** MAIN MENU PAGE **/
+
+#apMainMenu{
+    -fx-background-image : url("../img/bg_mainmenu.png");
+    -fx-background-size : 800 600;
+}
+
+/** TICKET  **/
+
+#apTicket{
+    -fx-background-image : url("../img/bg_ticket.png");
+    -fx-background-size : 800 600;
+}
